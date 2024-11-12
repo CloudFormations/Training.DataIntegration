@@ -1,0 +1,98 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "TrainingFactoryDev"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"EmailSenderFunction_functionKey": {
+			"value": ""
+		},
+		"TrainingStore01_connectionString": {
+			"value": ""
+		},
+		"traininglak01_accountKey": {
+			"value": ""
+		},
+		"traininglake01noneKV_accountKey": {
+			"value": ""
+		},
+		"ADLS_saintegrationpipelines_properties_typeProperties_url": {
+			"value": "https://traininglake01.dfs.core.windows.net"
+		},
+		"AnyDatabaseConnection_properties_typeProperties_connectionString_secretName": {
+			"value": "@linkedService().DBConnectionSecret"
+		},
+		"AnyDatabaseConnectionFromAnyKeyVault_properties_typeProperties_connectionString_secretName": {
+			"value": "@linkedService().KeyVaultSecretName"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adayfullofadfsa.dfs.core.windows.net"
+		},
+		"BatchForTraining01_properties_typeProperties_batchUri": {
+			"value": "https://batchfortraining01.uksouth.batch.azure.com"
+		},
+		"BatchForTraining01_properties_typeProperties_poolName": {
+			"value": "09a2ec47-0cc8-4492-935c-04852e3ec652"
+		},
+		"BatchForTraining01_properties_typeProperties_accountName": {
+			"value": "batchfortraining01"
+		},
+		"EmailSenderFunction_properties_typeProperties_functionAppUrl": {
+			"value": "https://frameworksupportfunctions.azurewebsites.net"
+		},
+		"GenericKeys_properties_typeProperties_baseUrl": {
+			"value": "@{linkedService().baseUrl}"
+		},
+		"HTTP_AWGitHub_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/microsoft/sql-server-samples/master/samples/databases/adventure-works/oltp-install-script/"
+		},
+		"HTTP_AWProduct_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/microsoft/sql-server-samples/master/samples/databases/adventure-works/oltp-install-script/Product.csv"
+		},
+		"LaptopFiles_properties_typeProperties_host": {
+			"value": "C:\\ADFRoot\\"
+		},
+		"LaptopFiles_properties_typeProperties_userId": {
+			"value": "ADFIRUser"
+		},
+		"TrainingKeys01_properties_typeProperties_baseUrl": {
+			"value": "https://TrainingKeys01.vault.azure.net/"
+		},
+		"TrainingKeys01withUMI_properties_typeProperties_baseUrl": {
+			"value": "https://TrainingKeys01.vault.azure.net/"
+		},
+		"trainingdb01_properties_typeProperties_connectionString_secretName": {
+			"value": "ConnectionString-trainingdb01"
+		},
+		"traininglak01_properties_typeProperties_url": {
+			"value": "https://traininglake01.dfs.core.windows.net"
+		},
+		"traininglake01_properties_typeProperties_url": {
+			"value": "https://traininglake01.dfs.core.windows.net"
+		},
+		"traininglake01noneKV_properties_typeProperties_url": {
+			"value": "https://traininglake01.dfs.core.windows.net"
+		},
+		"AzureFunctionTest_properties_privateLinkResourceId": {
+			"value": "/subscriptions/450eaf4d-1124-4b6d-b490-95dedc991c1e/resourceGroups/ADF.procfwk/providers/Microsoft.Web/sites/FrameworkSupportFunctions"
+		},
+		"AzureFunctionTest_properties_groupId": {
+			"value": "sites"
+		},
+		"AzureKeyVault1_properties_privateLinkResourceId": {
+			"value": "/subscriptions/450eaf4d-1124-4b6d-b490-95dedc991c1e/resourceGroups/Training/providers/Microsoft.KeyVault/vaults/TrainingKeys01"
+		},
+		"AzureKeyVault1_properties_groupId": {
+			"value": "vault"
+		},
+		"AzureKeyVault1_properties_fqdns": {
+			"value": [
+				"trainingkeys01.vaultcore.azure.net"
+			]
+		}
+	}
+}
