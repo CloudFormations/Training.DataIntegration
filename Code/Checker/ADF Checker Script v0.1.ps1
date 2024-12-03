@@ -1,6 +1,6 @@
 # STEP 1:
 #Provide the location of your download ARM template file:
-$ARMTemplateFilePath = "C:\ADFRoot\arm_template.json"
+$ARMTemplateFilePath = "C:\ADFRoot\ARMTemplateForFactory.json"
 
 #STEP 2:
 #Pick how you'd like the output:
