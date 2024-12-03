@@ -5,3 +5,6 @@ Code/MetadataDB/trainingdb01.jfm
 *.dbmdl
 *.jfm
 Code/.vs/TrainingCode/v16/.suo
+/Code/.vs
+/Code/CustomActivity/obj
+/Code/MetadataDB/obj
