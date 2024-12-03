@@ -1,6 +1,6 @@
 # Set global variables as required:
-$resourceGroupName = "ADF.procfwk"
-$dataFactoryName = "FrameworkFactoryDev"
+$resourceGroupName = "MyFirstResourceGroup"
+$dataFactoryName = "MyFirstDataFactory"
 $region = "uksouth"
 
 #SPN for deploying ADF:
@@ -22,9 +22,8 @@ $pscredential = New-Object System.Management.Automation.PSCredential($spId, $pas
 Connect-AzAccount -ServicePrincipal -Credential $pscredential -TenantId $tenantId | Out-Null
 
 # Get Deployment Objects and Params files
-$scriptPath = "C:\Users\PaulAndrew\Source\GitHub\ADF.procfwk\DeploymentTools\DataFactory\"
-#$deploymentFilePath = $scriptPath + "\ProcFwkComponents.json"
-$deploymentFilePath = "C:\Users\PaulAndrew\Source\GitHub\ADF.procfwk\DeploymentTools\DataFactory\ProcFwkComponents.json"
+$scriptPath = ".\Code\DataFactory"
+$deploymentFilePath = ".\Code\PowerShell\Components.json"
 
 #Write-Host $scriptPath
 
