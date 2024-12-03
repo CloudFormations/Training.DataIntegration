@@ -1,7 +1,5 @@
-Code/.vs/
-Code/CustomActivity/obj
-Code/MetadataDB/obj
 Code/MetadataDB/trainingdb01.dbmdl
 Code/MetadataDB/trainingdb01.jfm
 *.dbmdl
 *.jfm
+/Code/.vs/ProjectEvaluation
